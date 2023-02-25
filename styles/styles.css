@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('ttf'),
+    url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('ttf'),
+    url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('ttf'),
+    url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf');
+}
+
+:root {
+  --color-light-red: hsl(0, 100%, 67%);
+  --color-orangey-yellow: hsl(39, 100%, 56%);
+  --color-green-teal: hsl(166, 100%, 37%);
+  --color-cobalt-blue: hsl(234, 85%, 45%);
+
+  --color-light-slate-blue: hsl(252, 100%, 67%);
+  --color-light-royal-blue: hsl(241, 81%, 54%);
+
+  --color-violet-blue: hsla(256, 72%, 46%, 1);
+  --color-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-light-lavender: hsl(241, 100%, 89%);
+  --color-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+:root,
+html,
+body {
+  width:100vw;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: inherit;
+  background-color: hsl(221, 100%, 97%);
+  border: none;
+  letter-spacing:0.1px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  position: relative;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+  opacity:95%;
+
+}
+
+#results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: linear-gradient(0deg, var(--color-cobalt-blue), var(--color-light-slate-blue));
+  text-align: center;
+  width: 18%;
+  height: 400px;
+  color: var(--color-white);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+#result-title {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  opacity: 50%;
+}
+
+#score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  padding: 1rem 0rem;
+  background: linear-gradient(0deg, var(--color-cobalt-blue), var(--color-light-royal-blue));
+}
+
+#result-score {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bolder;
+  font-size: 3.3rem;
+  opacity: 70%;
+}
+
+#result-total {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  opacity: 70%;
+}
+#feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:80%;
+  margin: 2rem;
+}
+
+#feedback-title {
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  opacity: 70%;
+}
+#feedback-description{
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 50%;
+}
+
+#summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 18%;
+  height: 400px;
+  padding: 1rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 8px 12px 5px var(--color-pale-blue);
+
+}
+
+#summary-container h1 {
+  text-align: left;
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+  padding: 0.5rem;
+  color: var(--color-dark-gray-blue)
+}
+
+#reaction {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 100%, 95%);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  margin: 4px;
+
+
+}
+
+#reaction .ability {
+  color: var(--color-light-red);
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.ability-icon{
+  width:40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#memory {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(39, 100%, 95%);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  margin: 4px;
+
+}
+
+#memory .ability {
+  color: var(--color-orangey-yellow);
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+
+#visual {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(241, 100%, 95%);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  margin: 4px;
+
+}
+
+#visual .ability {
+  color: hsl(241, 100%, 75%);
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+#verbal {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(166, 100%, 95%);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+  margin: 4px;
+
+}
+
+#verbal .ability {
+  color: var(--color-green-teal);
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.individual-score{
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: calc(0.9rem + 1px);
+  opacity:75%;
+  padding: 2px;
+  
+}
+.individual-total{
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: bold;
+  font-size: 0.9rem;
+  opacity:50%;
+  padding: 2px;
+
+}
+
+#continue-button {
+  background-color: var(--color-dark-gray-blue);
+  width: 80%;
+  padding: 1rem;
+  color: var(--color-white);
+  font-family: "HankenGrotesk", sans-serif;
+  font-weight: normal;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+#continue-button:hover,
+#continue-button:active,#continue-button:focus{
+  background-color: var(--color-violet-blue);
+}
+@media screen and (375px<=width <=768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #results-container {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 2rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  #reaction,#memory,#visual,#verbal{
+    width:90%;
+    margin:10px 0;
+    padding: 12px 10px;
+  }
+
+  #summary-container {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+  }
+  #summary-container h1 {
+    padding: 0.5rem;
+  }
+  #continue-button {
+    background-color: var(--color-dark-gray-blue);
+    width: 95%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    
+  }
+}

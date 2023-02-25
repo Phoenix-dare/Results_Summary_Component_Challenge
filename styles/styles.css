@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background: linear-gradient(0deg, var(--color-cobalt-blue), var(--color-light-slate-blue));
+  background: linear-gradient(0deg, var(--color-cobalt-blue),var(--color-light-royal-blue), var(--color-light-slate-blue));
   text-align: center;
   width: 18%;
   height: 400px;
@@ -87,7 +87,7 @@ main {
   width: 140px;
   height: 140px;
   padding: 1rem 0rem;
-  background: linear-gradient(0deg, var(--color-cobalt-blue), var(--color-light-royal-blue));
+  background: linear-gradient(180deg, var(--color-cobalt-blue), var(--color-light-royal-blue));
 }
 
 #result-score {

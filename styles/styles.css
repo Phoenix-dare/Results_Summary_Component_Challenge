@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'HankenGrotesk';
-  src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('ttf'),
-    url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('ttf'),
-    url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('ttf'),
-    url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('ttf');
+  src: url('../assets/fonts/static/HankenGrotesk-Medium.ttf') format('truetype'),
+    url('../assets/fonts/static/HankenGrotesk-Bold.ttf') format('truetype'),
+    url('../assets/fonts/static/HankenGrotesk-ExtraBold.ttf') format('truetype'),
+    url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 
 :root {
